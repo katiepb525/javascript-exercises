@@ -1,6 +1,7 @@
 const reverseString = function (string) {
-    let reversedString = ""
-    for (i = string.length; i > 0; --i) {
+    let reversedString = ""; // initalize a blank string variable to store value into
+
+    for (i = string.length; i >= 0; i--) { // set i as length of string (so hello =  5) while 5 is equal to or less than 0; decrement i before the end of the loop.
         reversedString += string.charAt(i);
     }
     return reversedString;
