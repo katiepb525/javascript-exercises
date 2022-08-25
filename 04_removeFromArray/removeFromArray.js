@@ -1,5 +1,5 @@
 const removeFromArray = function (array, toRemove) {
-    let indexRemoved = array.indexOf(toRemove);
+    const indexRemoved = array.indexOf(toRemove);
     array.splice(indexRemoved);
     return array;
 };
