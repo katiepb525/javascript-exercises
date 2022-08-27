@@ -7,7 +7,7 @@ const removeFromArray = function (array, ...args) {
         // loop argumenets through current value
         for (let j = 0; j < args.length; j++) {
 
-            if (currentVal === args[j]) {
+            if (array[currentVal] === args[j]) {
                 let removeIndex = array.indexOf(args[j]); // find the index of the current item in array
                 array.splice(removeIndex, 1); // remove the item once using the index
             }
