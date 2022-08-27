@@ -1,4 +1,5 @@
 const removeFromArray = function (array, ...args) {
+    // make a copy of the original array using from
     let origArray = Array.from(array);
     // loop through each item in original array
     for (let i = 0; i < origArray.length; i++) {
