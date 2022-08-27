@@ -4,9 +4,13 @@ const removeFromArray = function (array, ...args) {
 
     for (i = 0; i < array.length; i++) {
         // if item in array does equal item in args, continue with removal
+        if (array[i] == args[i]) {
+            const removeIndex = array.indexOf(args[i]); // find the index of the current item in array
 
-        if 
-        
+            array.splice(removeIndex, 1); // remove the item once using the index
+        }
+
+
     }
 
 
@@ -15,10 +19,10 @@ const removeFromArray = function (array, ...args) {
 
     // only run if items in given array are 
 
-    for (i = 0; i < args.length; i++) { // loop through the entire length of current arguments
-        const removeIndex = array.indexOf(args[i]); // find the index of the current item in array
-        array.splice(removeIndex, 1); // remove the item once using the index
-    }
+    // for (i = 0; i < args.length; i++) { // loop through the entire length of current arguments
+    // const removeIndex = array.indexOf(args[i]); // find the index of the current item in array
+    // array.splice(removeIndex, 1); // remove the item once using the index
+
 
     return array; // return the edited array
 };
