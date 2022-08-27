@@ -4,7 +4,7 @@ const removeFromArray = function (array, ...args) {
     for (let i = 0; i < origArrayLength; i++) {
 
         let currentVal = i;
-        // loop through each item in arguments
+        // loop argumenets through current value
         for (let j = 0; j < args.length; j++) {
 
             if (currentVal === args[j]) {
