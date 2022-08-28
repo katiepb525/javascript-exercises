@@ -20,6 +20,9 @@ const sumAll = function (num1, num2) {
             return "ERROR";
             break;
 
+        case (isNan(num1) || isNaN(num2)):
+            return "ERROR";
+            break;
     }
 
     //loop through every number between num1 and num2
