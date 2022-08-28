@@ -16,7 +16,9 @@ const sumAll = function (num1, num2) {
             num2 = origNum1;
             break;
 
-
+        case (num1 < 0 || num2 < 0):
+            return "ERROR";
+            break;
 
     }
 
