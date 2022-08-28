@@ -1,7 +1,12 @@
 const sumAll = function (arguments) {
+    // store the result
     let result;
 
-    for (i = 0; i < arguments.length; i++) {
+    // store the original length
+    const origLength = arguments.length;
+
+    // loop through all arguments
+    for (i = 0; i < origLength; i++) {
         result += arguments;
     }
 
