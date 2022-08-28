@@ -20,7 +20,7 @@ const sumAll = function (num1, num2) {
             return "ERROR";
             break;
 
-        case (typeof num1 === 'string' || typeof num2 === 'string'):
+        case (!(typeof num1 === 'number') || !(typeof num2 === 'number')):
             return "ERROR";
             break;
 
