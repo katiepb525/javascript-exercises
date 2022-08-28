@@ -1,4 +1,16 @@
-const sumAll = function () {
+const sumAll = function (num1, num2) {
+
+    // store the result
+    let result = 0;
+
+    //loop through every number between num1 and num2
+    for (i = num1; i < num2; i++) {
+        // add each number to the result
+
+
+    }
+
+    // return the result after loop is finished
 
 };
 
