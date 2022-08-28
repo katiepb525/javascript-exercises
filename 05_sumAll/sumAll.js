@@ -2,13 +2,22 @@ const sumAll = function (num1, num2) {
 
     // store the result
     let result = 0;
+
+    // store original given arguments
     let origNum1 = num1;
     let origNum2 = num2;
 
     //if the first argument is greater than the second
-    if (num1 > num2) {
-        num1 = origNum2;
-        num2 = origNum1;
+    switch (true) {
+
+        case (num1 > num2):
+            // switch their places
+            num1 = origNum2;
+            num2 = origNum1;
+            break;
+
+
+
     }
 
     //loop through every number between num1 and num2
