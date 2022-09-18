@@ -26,8 +26,9 @@ const multiply = function (args) {
 
 };
 
-const power = function () {
-
+const power = function (a, b) {
+  let product = a ** b;
+  return product;
 };
 
 const factorial = function () {
