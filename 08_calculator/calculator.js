@@ -17,7 +17,12 @@ const sum = function (args) {
 
 };
 
-const multiply = function () {
+const multiply = function (args) {
+  let finalProduct = 1;
+  for (let i = 0; i < args.length; i++) {
+    finalProduct *= parseInt(args[i]);
+  }
+  return finalProduct;
 
 };
 
