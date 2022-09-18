@@ -1,8 +1,9 @@
 const palindromes = function (rawString) {
     //create a regex of punctuation.spaces to look out for
-    const punctuation = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
+    const punctuation = /[\s!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
     //remove punctuation of string
     let cleanString = rawString.replace(punctuation, "").toLowerCase();
+
     // store modified original
     let origString = cleanString;
 
