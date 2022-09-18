@@ -8,7 +8,12 @@ const subtract = function (a, b) {
   return difference;
 };
 
-const sum = function () {
+const sum = function (args) {
+  let finalSum = 0;
+  for (let i = 0; i < args.length; i++) {
+    finalSum += parseInt(args[i]);
+  }
+  return finalSum;
 
 };
 
