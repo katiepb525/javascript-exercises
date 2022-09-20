@@ -1,14 +1,12 @@
 const findTheOldest = function (obj) {
+    const currentYear = (new Date()).getFullYear();
     const sorted = obj.sort((a, b) => {
-        if (a.year > b.year) {
-            return 1;
-        }
-        else {
-            return -1;
-        }
+
+
+
     })
     console.log(sorted);
-    return sorted[1];
+    return sorted[0];
 
 };
 
